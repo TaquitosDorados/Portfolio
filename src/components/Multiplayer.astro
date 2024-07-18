@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import multiplayer from '../assets/multiplayer.jpg'
+---
+
+<div>
+  <Image
+    class="project-image border  border-black"
+    src={multiplayer}
+    alt="Multiplayer Icon"
+    densities={[1, 2, 3]} 
+  />
+</div>
+
+<style>
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+</style>

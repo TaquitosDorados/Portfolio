@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import webImage from '../assets/webDev.jpg'
+---
+
+<div>
+  <Image
+    class="project-image border  border-black"
+    src={webImage}
+    alt="Web Dev Icon"
+    densities={[1, 2, 3]} 
+  />
+</div>
+
+<style>
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+</style>

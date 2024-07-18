@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Heading.astro";
+import BackButton from "../components/BackButton.astro";
+import DimentionalDead from "../components/Projects/DimentionalDead.astro";
+import Freddy from "../components/Projects/Freddy.astro";
+---
+
+<Layout title="Multiplayer">
+  <div class="max-w-screen-md m-auto p-4 my-4 antialiased">
+    <Heading />
+    <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+      <span class="text-gradient"
+        >Multiplayer integration</span>
+    </h1>
+    <br>
+    <p class="lead text-white">
+      I have made plenty of projects that has some Multiplayer integration, these are all made using Unreal Engine. Currently working on a VR multiplayer game. I have some experience with
+      replication and networking in Unreal Engine.
+    </p>
+      <br>
+      <p class="lead text-white">
+        Dimentional Dead uses connection to Steam to add a player to your survival Match, you must work as a team to survive the waves of zombies and discover every easter egg there is.
+      </p>
+      <br>
+      <DimentionalDead />
+      <br>
+      <p class="lead text-white">
+        Freddy's Kart is a multiplayer racing game, you can play with your friends inviting them via Steam. The game has a lot of powerups and a lot of fun.
+      </p>
+      <br>
+      <Freddy />
+      <br>
+      <p class="lead text-white">
+        I've made multiple other multiplayer tests, like a simple multiplayer shooter and a For Honor like game.
+      </p>
+    <BackButton />
+</div>
+</Layout>
+
+<style>
+</style>
+

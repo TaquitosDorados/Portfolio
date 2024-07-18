@@ -1,0 +1,258 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BackButton from "../components/BackButton.astro";
+import Heading from "../components/Heading.astro";
+import Card from "../components/Card.astro";
+
+//Cards
+import LastRobot from "../components/Projects/LastRobot.astro";
+import StarFox from "../components/Projects/StarFox.astro";
+import Dimentional from "../components/Projects/DimentionalDead.astro";
+import Punch from "../components/Projects/PunchOut.astro";
+import NoEscape from "../components/Projects/NoEscape.astro";
+import BeatSmash from "../components/Projects/BeatSmash.astro";
+import Fishing from "../components/Projects/Fishing.astro";
+import Freddy from "../components/Projects/Freddy.astro";
+import Multiverse from "../components/Projects/Multiverse.astro";
+import Civilizations from "../components/Projects/Civilizations.astro";
+import Shadow from "../components/Projects/Shadow.astro";
+import Flappy from "../components/Projects/Flappy.astro";
+import Luigi from "../components/Projects/Luigi.astro";
+import Sinsong from "../components/Projects/Sinsong.astro";
+import Isaac from "../components/Projects/Isaac.astro";
+import Room from "../components/Projects/Room.astro";
+import DiceThrone from "../components/Projects/DiceThrone.astro";
+---
+
+
+<Layout title="MyProjects">
+  <div id="contents">
+    <main class="container">
+      <Heading/>
+      <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+       <span class="text-gradient"
+        >My Projects</span>
+      </h1>
+
+
+    
+      <p class="lead text-white">
+        These are some of my game development projects I have developed throughout all of my career. I've always focused on learning new 
+        mechanics from different genres and platforms. I've worked on projects that range from mobile games to VR experiences.
+      </p>
+      <br/>
+
+      <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+       <div class="">
+         <Card
+            href="s"
+            title="Last Robot in Earth"
+            body="A 3D platformer game similar to Wipeout with Twitch integration, where one player controls a robot that must reach the end of the level while avoiding obstacles from the environment and Twitch chat."
+            tags="Unreal, C++, Twitch API, 3D Modeling, Game Design"
+          >
+            <div class="max-w-full">
+              <LastRobot />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            href="s"
+            title="Star Fox's Bullet Shitshow"
+            body="A bullet hell game, parody of the StarFox game series, where the player controls a spaceship that must survive waves of enemies and bosses while dodging bullets."
+            tags="Unity, C#, 2D Art, Game Design"
+          >
+            <div class="max-w-full">
+              <StarFox />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            href="s"
+            title="Dimentional Dead"
+            body="A 3D Call of Duty Zombies inspired game where the player must survive waves of zombies and skeletons while exploring two dimentions to find weapons, perks, and power-ups."
+            tags="Unreal, C++, Game Design"
+          >
+            <div class="max-w-full">
+              <Dimentional />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/TaquitosDorados/Out-Of-Punches/releases/tag/Games"
+            title="Out of Punches"
+            body="Punch-Out game for mobile devices where the player must defeat a series of enemies in a boxing ring by dodging, blocking, and punching."
+            tags="Unity, C#, 2D Art, Game Design, Mobile Development"
+          >
+            <div class="max-w-full">
+              <Punch />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/Ketosvaldo/MGNG_InfanciaTragedia/releases/tag/Games"
+            title="No way to Run"
+            body="A Slenderman inspired game where the player must collect 8 objects inside a concentration camp while avoiding a haunted decaying body of a soldier."
+            tags="Unreal, C++, 3D Modeling, Game Design"
+          >
+            <div class="max-w-full">
+              <NoEscape />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/TaquitosDorados/Ultimate-Super-Mega-Beat-Smasher-Mashup-2022/releases/tag/v1.0"
+            title="Ultimate Super Mega Beat Smasher Mashup 2022"
+            body="A rhythm game where combines various rhytm games into one, combining mechanics for each music level."
+            tags="Unity, C#, 2D Art, Game Design, Music Integration"
+          >
+            <div class="max-w-full">
+              <BeatSmash />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/TaquitosDorados/Fishing-Simulator/releases/tag/Game"
+            title="Fishing Simulator"
+            body="A 2D fishing simulator game where the player must catch fish and avoid obstacles to get the highest score."
+            tags="Unity, C#, 2D Art, Game Design"
+          >
+            <div class="max-w-full">
+              <Fishing />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/MataGameDev/FreddysKart"
+            title="Freddy's Kart"
+            body="A multiplayer Mario Kart inspired game with Five Nights at Freddy's theme"
+            tags="Unreal, C++, 3D Modeling, Game Design"
+          >
+            <div class="max-w-full">
+              <Freddy />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/TaquitosDorados/B-The-Multiverse/releases/tag/v1.0"
+            title="B-The-Multiverse"
+            body="A platformer-puzzle game where the player must navigate through different dimensions to solve puzzles and reach the end of the level."
+            tags="Unity, C#, 2D Art, Game Design"
+          >
+            <div class="max-w-full">
+              <Multiverse />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/TaquitosDorados/Civilizations7/releases/tag/v1.0"
+            title="Civilizations 7"
+            body="A small Civilization inspired game used to test AI behavior and pathfinding algorithms."
+            tags="Unity, C#, 2D Art, Game Design, AI Development"
+          >
+            <div class="max-w-full">
+              <Civilizations />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/TaquitosDorados/Shadow-Footsies/releases/tag/v1.0"
+            title="Shadow Footsies"
+            body="A small Shadow Fight inspired fighting game used to test AI behavior for fighting games."
+            tags="Unity, C#, 2D Art, Game Design, AI Development"
+          >
+            <div class="max-w-full">
+              <Shadow />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/lemingter/DetectiveEnProblemas"
+            title="Flappy Detective"
+            body="A Flappy Bird game with puzzle mechanics and Noir theme, where the player must solve puzzles to advance through the level."
+            tags="Unreal, C++, 2D Art, Game Design"
+          >
+            <div class="max-w-full">
+              <Flappy />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/MataGameDev/SinSong/releases/tag/v1.0"
+            title="SinSong"
+            body="A Metroivania game where the player must defeat the 7 deadly sins to save the world from eternal darkness."
+            tags="Unreal, C++, 2D Art, Game Design"
+          >
+            <div class="max-w-full">
+              <Sinsong />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/TaquitosDorados/Luigi-Blackjack/releases/tag/v1.0"
+            title="Luigi's Blackjack"
+            body="Play Blackjack with Luigi from the Mario Bros series, where the player must defeat Luigi in a game of Blackjack to win the game."
+            tags="Unity, C#, 2D Art, Game Design"
+          >
+            <div class="max-w-full">
+              <Luigi />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/TaquitosDorados/DiceThroneMobile/releases/tag/v1.0"
+            title="Dice Throne Mobile"
+            body="A mobile version of the Dice Throne board game, where the player must defeat the other player by rolling dice and using cards to attack."
+            tags="Unity, C#, 2D Art, Game Design"
+          >
+            <div class="max-w-full">
+              <DiceThrone />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/TaquitosDorados/The-Binding-of-Webos/releases/tag/v1.0"
+            title="The Binding of Isaac Test"
+            body="A small The Binding of Isaac inspired game used to test rogue-like mechanics."
+            tags="Unity, C#, 2D Art, Game Design"
+          >
+            <div class="max-w-full">
+              <Isaac />
+            </div>
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            github="https://github.com/TaquitosDorados/TheRoom1215"
+            title="The Room 1215"
+            body="The Game that started it all, a Warioware inspired Flash game where the player must complete a series of minigames."
+            tags="Flash, ActionScript, 2D Art, Game Design"
+          >
+            <div class="max-w-full">
+              <Room />
+            </div>
+          </Card>
+        </div>
+      </div>
+      <BackButton />
+    </main>
+  </div>
+</Layout>
+
+<style>
+</style>
+

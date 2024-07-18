@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Heading.astro";
+import BackButton from "../components/BackButton.astro";
+import AILearn from "../components/AIProjects/AICarLearning.astro";
+import AICarFinish from "../components/AIProjects/AICarFinish.astro";
+import Shadow from "../components/Projects/Shadow.astro";
+import Civilizations from "../components/Projects/Civilizations.astro";
+import NoEscape from "../components/Projects/NoEscape.astro";
+---
+
+<Layout title="AI Programming">
+  <div class="max-w-screen-md m-auto p-4 my-4 antialiased">
+    <Heading />
+    <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+      <span class="text-gradient"
+        >AI Programming</span>
+    </h1>
+
+    <h6 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Reinforced Learning Algorithms</h6>
+
+    <AILearn />
+    <br>
+    <p class="lead text-white">
+      Created an AI program that learns to drive a car using MLAgents plugin in Unity. The car's objective is to drive across a track without hitting the walls. 
+      The AI uses a neural network to learn from its mistakes and improve its driving skills until it can complete the track without crashing.
+    </p>
+      <br>
+        <p class="text-white">
+          This AI uses QLearning and Deep QLearning algorithms to learn how to drive the car. The AI is trained using a reward system that gives points for staying on the track and deducts
+          points for hitting the walls.
+        </p>
+<br>
+        <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Final Result</h1>
+
+        <AICarFinish/>
+
+        <p class="mb-6 text-gray-300 md:text-lg">
+           To see more you can check its <a
+            href="https://github.com/TaquitosDorados/QLearningCar"
+            target="_blank"
+            class="underline inline"
+            >Github page</a
+          >.
+        </p>
+      <br>
+      <h6 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">AI on Videogames</h6>
+
+      <p class="lead text-white">
+        Made numerous videogame projects implementing AI, using state machines, behavior trees, and pathfinding algorithms. These AI's can be simple enemies that follow the player, or more complex AI for strategy games.
+      </p>
+
+      <br>
+
+      <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Fighting Game</h1>
+
+      <p class="lead text-white">
+        Shadow Footsies is a fighting game where the player fights against an AI opponent. The AI uses a state machine to decide what actions to take based on the player's position and health.
+      </p>
+      <br>
+      <Shadow/>
+
+      <br>
+
+      <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Strategy Game</h1>
+      <p class="lead text-white">
+        Created a strategy game where the player controls an army of units to defeat the enemy. The AI uses a behavior tree to decide what actions to take based on its power and how much time has passed.
+      </p>
+      <br>
+      <Civilizations/>
+      <br>
+      <p class="lead text-white">
+        Each unit uses the A* pathfinding algorithm to find the shortest path to the desired location, stopping when no more movement is left, each tile in the world has its own weight. The AI can also build structures and gather resources to improve its army.
+      </p>
+
+      <br>
+
+      <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Horror Game</h1>
+      <p class="lead text-white">
+        No way to Run is a Slenderman inspired horror game where the player must collect 8 items while avoiding a creature that lurks around the player. The AI uses a behavior tree to decide what actions to take and where to spawn based on the player's position, number of items collected, and time passed.
+      </p>
+      <br>
+      <NoEscape/>
+      <br>
+      <p class="lead text-white">
+       This AI works similar to the one in Slenderman, the creature is not present most of the time, it will spawn around the player, around the next corner the player is going to, but never infront of the player. This is to create a sense of dread and tension each time the player has to turn to any direction. 
+      </p>
+      <br>
+      <p class="lead text-white">
+        After being seen by the player, the creature will start pursuing the player, the player must run the opposite direction because the creature feels to be much faster than the player, but after not looking at the creature for a second, this will disappear, creating tension after the player looks back to the creature just to see it's gone.
+      </p>
+    <BackButton />
+</div>
+</Layout>
+
+<style>
+</style>
+

@@ -8,9 +8,15 @@ import CTA from "../components/CTA.astro";
 import Contact from "../components/Contact.astro";
 
 //Professional Work Components
-import Anaren from "../components/LastRobot.astro";
+import LastRobot from "../components/Projects/LastRobot.astro";
+import StarFox from "../components/Projects/StarFox.astro";
+import Dimentional from "../components/Projects/DimentionalDead.astro";
 //Project Components
 import Python from "../components/Python.astro";
+import AI from "../components/AI.astro";
+import Multiplayer from "../components/Multiplayer.astro";
+import Web from "../components/Web.astro";
+import Apps from "../components/Apps.astro";
 ---
 
 <Layout title="Game Developer Portfolio">
@@ -47,40 +53,43 @@ import Python from "../components/Python.astro";
       <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="">
           <Card
-            href="anaren"
+            href="Anaren"
             title="Last Robot in Earth"
             body="A 3D platformer game similar to Wipeout with Twitch integration, where one player controls a robot that must reach the end of the level while avoiding obstacles from the environment and Twitch chat."
             tags="Unreal, C++, Twitch API, 3D Modeling, Game Design"
           >
             <div class="max-w-full">
-              <Anaren />
+              <LastRobot />
             </div>
           </Card>
         </div>
         <div class="">
           <Card
             href="anaren"
-            title="Anaren.com"
-            body="A Drupal website for the space and defense company, featuring pages for their different divisions and product lines. It also includes extensive DataTables integration for their product catalog."
-            tags="Drupal, PHP, JavaScript, CSS, HTML"
+            title="Star Fox's Bullet Shitshow"
+            body="A bullet hell game, parody of the StarFox game series, where the player controls a spaceship that must survive waves of enemies and bosses while dodging bullets."
+            tags="Unity, C#, 2D Art, Game Design"
           >
             <div class="max-w-full">
-              <Anaren />
+              <StarFox />
             </div>
           </Card>
         </div>
         <div class="">
           <Card
             href="anaren"
-            title="Anaren.com"
-            body="A Drupal website for the space and defense company, featuring pages for their different divisions and product lines. It also includes extensive DataTables integration for their product catalog."
-            tags="Drupal, PHP, JavaScript, CSS, HTML"
+            title="Dimentional Dead"
+            body="A 3D Call of Duty Zombies inspired game where the player must survive waves of zombies and skeletons while exploring two dimentions to find weapons, perks, and power-ups."
+            tags="Unreal, C++, Game Design"
           >
             <div class="max-w-full">
-              <Anaren />
+              <Dimentional />
             </div>
           </Card>
         </div>
+      </div>
+      <div class="my-4 py-4 px-2 mb-6 mx-auto max-w-screen-xl sm:py-8 lg:px-3 text-center">
+        <a href="Projects" class="text-black bg-stone-100 hover:bg-stone-200 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:hover:bg-stone-200  dark:focus:ring-stone-800 industry focus:ring-4 focus:ring-blue-600">See More</a>
       </div>
       <div class="my-8 bg-black">
         <CTA />
@@ -88,37 +97,47 @@ import Python from "../components/Python.astro";
       <h2
         class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
       >
-        Fun Projects
+        Other Skills
       </h2>
-      <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
         <div class="">
           <Card
-            title="Misc Python Apps"
-            body="Miscellaneous Python applications and scripts I've made to help me learn Python and to use as productivity tools or save me time."
-            tags="Python"
-            github="https://github.com/leabs/misc-python-apps"
+            title="AI Programming"
+            body="Multiple projects and games I've worked on that involve AI programming, such as pathfinding, decision trees, and behavior trees."
+            tags="AI, Game Design"
+            href="AI"
           >
-            <Python />
+            <AI />
           </Card>
         </div>
         <div class="">
           <Card
-            title="Misc Python Apps"
-            body="Miscellaneous Python applications and scripts I've made to help me learn Python and to use as productivity tools or save me time."
-            tags="Python"
-            github="https://github.com/leabs/misc-python-apps"
+            title="Multiplayer Implementation"
+            body="Games I've worked on that involve multiplayer implementation, such as replication and matchmaking."
+            tags="Multiplayer, Game Design"
+            href="Multiplayer"
           >
-            <Python />
+            <Multiplayer />
           </Card>
         </div>
         <div class="">
           <Card
-            title="Misc Python Apps"
-            body="Miscellaneous Python applications and scripts I've made to help me learn Python and to use as productivity tools or save me time."
+            title="Web Development"
+            body="Websites I've worked on, such as personal websites, testing websites and other."
             tags="Python"
-            github="https://github.com/leabs/misc-python-apps"
+            href="Web"
           >
-            <Python />
+            <Web />
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            title="App Development"
+            body="Some of the mobile apps I've worked on, such as personal projects, testing apps and other."
+            tags="Python"
+            href="Apps"
+          >
+            <Apps />
           </Card>
         </div>
       </div>
