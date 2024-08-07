@@ -22,6 +22,8 @@ import Sinsong from "../components/Projects/Sinsong.astro";
 import Isaac from "../components/Projects/Isaac.astro";
 import Room from "../components/Projects/Room.astro";
 import DiceThrone from "../components/Projects/DiceThrone.astro";
+import Sickness from "../components/Projects/Sickness.astro";
+import Bunny from "../components/Projects/Bunny.astro";
 ---
 
 
@@ -45,7 +47,7 @@ import DiceThrone from "../components/Projects/DiceThrone.astro";
       <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
        <div class="">
          <Card
-            href="s"
+            href="https://paulands.itch.io/last-robot-in-earth"
             title="Last Robot in Earth"
             body="A 3D platformer game similar to Wipeout with Twitch integration, where one player controls a robot that must reach the end of the level while avoiding obstacles from the environment and Twitch chat."
             tags="Unreal, C++, Twitch API, 3D Modeling, Game Design"
@@ -57,7 +59,31 @@ import DiceThrone from "../components/Projects/DiceThrone.astro";
         </div>
         <div class="">
           <Card
-            href="s"
+             href="https://discord.gg/branchingsicknees"
+             title="Branching Sickness"
+             body="Currently working on a Halo fan game. A Flood horror game where the player must cross every level while avoiding the infection forms."
+             tags="Unreal, C++, 3D Modeling, Game Design"
+           >
+             <div class="max-w-full">
+               <Sickness />
+             </div>
+           </Card>
+         </div>
+         <div class="">
+          <Card
+             github="https://github.com/TaquitosDorados/BunnyGame/releases/latest"
+             title="Catch the Bunny"
+             body="A VR multiplayer game where one player controls a bunny (desktop), and the other player controls a hunter (VR) that must catch the bunny before the time runs out."
+             tags="Unreal, C++, VR, 3D Modeling, Game Design"
+           >
+             <div class="max-w-full">
+               <Bunny />
+             </div>
+           </Card>
+         </div>
+        <div class="">
+          <Card
+            github="https://github.com/TaquitosDorados/Bullet-Shitfest/releases/latest"
             title="Star Fox's Bullet Shitshow"
             body="A bullet hell game, parody of the StarFox game series, where the player controls a spaceship that must survive waves of enemies and bosses while dodging bullets."
             tags="Unity, C#, 2D Art, Game Design"
@@ -69,7 +95,7 @@ import DiceThrone from "../components/Projects/DiceThrone.astro";
         </div>
         <div class="">
           <Card
-            href="s"
+            github="https://github.com/TaquitosDorados/DimentionalDead"
             title="Dimentional Dead"
             body="A 3D Call of Duty Zombies inspired game where the player must survive waves of zombies and skeletons while exploring two dimentions to find weapons, perks, and power-ups."
             tags="Unreal, C++, Game Design"
@@ -129,7 +155,7 @@ import DiceThrone from "../components/Projects/DiceThrone.astro";
         </div>
         <div class="">
           <Card
-            github="https://github.com/MataGameDev/FreddysKart"
+            github="https://github.com/TaquitosDorados/FreddysKart"
             title="Freddy's Kart"
             body="A multiplayer Mario Kart inspired game with Five Nights at Freddy's theme"
             tags="Unreal, C++, 3D Modeling, Game Design"
